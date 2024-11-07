@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Gabarito", sans-serif;
+  
+  }
+  
+  .navbar {
+    gap: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid black 1px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+  }
+  
+  .navbar__s1__title {
+    color: #A435F0;
+    cursor: pointer;
+  }
+  
+  
+  .navbar__s2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border: solid black 1px;
+    border-radius: 30px;
+    width: 60%;
+  }
+  
+  .navbar__s2 i {
+    cursor: pointer;
+  }
+  
+  .navbar__s2 input {
+    font-size: 16px;
+    border: none;
+    width: 100%;
+    background-color: transparent;
+  }
+  
+  .navbar__s2 input:focus {
+    outline: none;
+  }
+  
+  .navbar__s3 {
+    display: flex;
+    gap: 19px;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .mylearning {
+    position: relative;
+  }
+  
+  .mylearning__popup {
+    right: 0;
+    background-color: white;
+    position: absolute;
+    border: solid black 1px;
+    padding: 20px;
+    width: 100px;
+    top: 150%;
+    display: none;
+  
+  }
+  
+  .mylearning:hover .mylearning__popup {
+    display: block;
+  }
+  
+  .categories {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: solid black 1px;
+    padding: 10px;
+  }
+  
+  .categories p {
+    background-color: #A334F0;
+    padding: 10px;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .categories p:hover {
+    background-color: #000000;
+    color: rgb(108, 241, 126);
+  
+    transform: scale(1.2);
+  }
+  
+  .sale-image {
+    position: relative;
+  
+  }
+  
+  .banner-box {
+    position: absolute;
+    width: 20rem;
+    left: 8rem;
+    top: 5rem;
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    padding: 2.4rem;
+  }
+  
+  .banner-box button {
+    color: #FFFFFF;
+    background-color: black;
+    border: none;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+  
+  }
+  
+  .banner-box button:hover {
+    background-color: #3E4143;
+  }
+  
+  .sale-image img {
+    width: 100%;
+    height: 500px;
+  }
+  
+  .recommended {
+    padding: 10px;
+  
+  }
+  
+  .recommended__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 15px;
+  
+  
+  
+  
+  }
+  
+  .course-card {
+    flex-basis: 20%;
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin: 5px;
+  }
+  
+  .course-card:hover {
+    transform: scale(1.2);
+  }
+  
+  .course-card p del {
+    margin-left: 10px;
+  }
+  
+  .course-card h3 {
+    cursor: pointer;
+  }
+  
+  .course-card img {
+    width: 100%;
+    height: 50%;
+  
+  }
+  
+  .topics {
+    padding: 10px;
+  }
+  
+  .topics__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .topics__container p {
+    border: solid grey 2px;
+    padding: 10px;
+    flex-grow: 1;
+    flex-basis: 25%;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .topics__container p:hover {
+    background-color: rgb(160, 231, 28);
+  }
+  
+  .footer-section {
+    background-color: #3e4143;
+    color: white;
+  
+    padding: 20px;
+  }
+  
+  .footer-section-logos {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 10px;
+  
+  }
+  
+  .footer-section-logos img {
+    cursor: pointer;
+    height: 60px;
+    width: 115px;
+  
+  }
+  
+  .footer-section-main {
+    display: flex;
+    margin: 30px;
+  
+  
+  }
+  
+  .footer-section-one {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+  
+  }
+  
+  .footer-section-one a {
+    margin-bottom: 18px;
+    color: white;
+  
+  }
+  
+  .footer-section-two {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 20px;
+  
+    cursor: pointer;
+  }
+  
+  .footer-section-two h1:hover {
+    color: red;
+  
+  }
+  
+  @media screen and (max-width:800px) {
+    body {
+        font-size: 10px;
+    }
+  
+  }
+  
+  @media screen and (max-width:600px) {
+    .course-card {
+        flex-basis: 40%;
+    }
+  
+    .navbar__s2,
+    .navbar__s3 {
+        display: none;
+    }
+  
+    .categories {
+        display: none;
+    }
+  }
+  @media screen and (max-width:600px) {
+    .footer-section-logos {
+        display: flex;
+        flex-wrap: wrap;
+          align-items: center;
+    }
+  
+    .banner-box {
+        width: 15rem;
+    }
+    
+    
+  }
+  
+  @media screen and (min-width:600px) {
+    .navbar__s4 {
+        display: none;
+    }
+  
+  
+  }
