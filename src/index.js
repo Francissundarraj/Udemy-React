@@ -7,6 +7,7 @@ import Categories from "./components/Categories"
 import Saleimage from "./components/Sale-image"
 import Recommended from "./components/Recommended"
 import Topics from "./components/Topics"
+import App from "./App"
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
@@ -15,13 +16,5 @@ const root = ReactDOM.createRoot(document.getElementById("root"))
     
 
 
-root.render(
-<div>
-    <Navbar></Navbar>
-    <Categories></Categories>
-    <Saleimage></Saleimage>
-    <Recommended></Recommended>
-    <Topics></Topics>
-    </div>
-    )
+root.render(<App></App>)
 
